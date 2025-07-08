@@ -22,8 +22,8 @@ export function MenuNavItems({ items }: MenuNavItemsProps) {
         return (
           <NavigationMenuItem
             className={[
-              'hover:bg-gray-700 h-full py-3 px-5 rounded-xl ml-0 text-lg',
-              isActive ? 'bg-gray-700' : 'font-normal',
+              'hover:bg-custom-dark h-full py-3 px-5 rounded-xl ml-0 text-lg text-gray-400 ',
+              isActive ? 'bg-custom-dark text-white' : 'font-normal',
             ].join(' ')}
             key={item.to}
           >

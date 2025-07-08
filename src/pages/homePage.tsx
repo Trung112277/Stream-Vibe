@@ -1,3 +1,9 @@
+import { MainBanner } from '@/components/common/banner/mainBanner';
+
 export function HomePage() {
-    return <div>HomePage</div>
+  return (
+    <>
+      <MainBanner />
+    </>
+  );
 }

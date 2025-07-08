@@ -49,7 +49,10 @@ module.exports = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
-  			border: 'hsl(var(--border))',
+  			border: {
+				DEFAULT: 'var(--border)',
+				custom: 'var(--border-custom)',
+			  },
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			chart: {
@@ -60,8 +63,9 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			},
 			custom: {
-				dark: '#1E1E1E',
-			}
+			  DEFAULT: '#1E1E1E',
+			  dark: '#1E1E1E',
+			},
   		}
   	}
   },
